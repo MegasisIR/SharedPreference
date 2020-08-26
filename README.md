@@ -17,7 +17,7 @@ public UserManager(Context context) {
 <pre dir="rtl">
   و  تابع به اسم  saveInformation را ساختیم که در shared preference ایجاد شده اطلاعات را ذخیره کند
   </pre>
-  <pre>
+<pre>
    public boolean saveInformation(String fullName,
                                   String email,
                                   String gender) {
@@ -28,32 +28,32 @@ public UserManager(Context context) {
           editor.apply();
           return true;
       }
-  </pre>
-  <pre dir="rtl">
+</pre>
+<pre dir="rtl">
   اگر بخواهیم به عنوان مثال به داده full_name دسترسی داشته داشته باشیم
-  </pre>
-  <pre>
+</pre>
+<pre>
    public String getFullName() {
           return sharedPreferences.getString("full_name", "");
       }
-  </pre>
+</pre>
 
-   <pre dir="rtl">
+<pre dir="rtl">
   اگر بخواهیم همه داده ها را پاک کنیم به روش زیر عمل میکنیم
-    </pre>
-    <pre>
+</pre>
+<pre>
     SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.clear();
             editor.apply();
-    </pre>
+</pre>
 
-     <pre dir="rtl">
+<pre dir="rtl">
 اگر بخواهیم مقدار مشخصی را حذف کنیم به روش زیر عمل میکنیم
-      </pre>
-      <pre>
+</pre>
+<pre>
       public void removeKey(String key){
               SharedPreferences.Editor editor = sharedPreferences.edit();
               editor.remove(key);
               editor.apply();
           }
-      </pre>
+</pre>
