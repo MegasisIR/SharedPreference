@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SharedPreference</string>
+    <string name="main_title_appBar">داده های مشترک</string>
+    <string name="main_fullName">نام ونام خانوادگی</string>
+    <string name="main_email">ایمیل</string>
+    <string name="main_gender">جنسیت</string>
+    <string name="male">مرد</string>
+    <string name="main_female">زن</string>
+    <string name="main_btn_save">ذخیره اطلاعات</string>
+</resources>
